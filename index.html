@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
 
     <title>Sprint Challenge - Anasayfa</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto|Rubik"
@@ -22,21 +26,22 @@
     <div>
       <!-- header -->
       <header>
-        <div>
+        <div class="transparan">
           <a href="index.html"><h1>ERGİNEER BAR VE MANGAL</h1></a>
 
           <!-- nav -->
           <nav>
-            <a href="menu.html">Menü</a>
-            <a href="">Rezervasyonlar</a>
-            <a href="">Özel Teklifler</a>
-            <a href="">İletişim</a>
-          </nav>
-
-          <nav>
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
+            <div class="yan">
+              <a href="menu.html">Menü</a>
+              <a href="rezervasyonlar.html">Rezervasyonlar</a>
+              <a href="özelteklifler.html">Özel Teklifler</a>
+              <a href="iletisim.html">İletişim</a>
+            </div>
+            <div id="ikon">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
           </nav>
         </div>
       </header>
@@ -135,11 +140,31 @@
       <!-- footer -->
       <footer>
         <!-- email signup -->
-        Mail listemize katılın! Üye Ol
-        <!-- nav -->
-        Menü Rezervasyonlar Özel Teklifler İletişim
-        <!-- copyright -->
-        ©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.
+        <div>
+          <div class="yan">
+            <div class="mail">
+              <h4>Mail listemize katılın!</h4>
+              <div class="form-control">
+                <input placeholder="E-posta Adresi" type="e-mail" />
+                <button>Üye Ol</button>
+              </div>
+            </div>
+
+            <!-- nav -->
+            <div>
+              <nav>
+                <a href="menu.html">Menü</a>
+                <a href="rezervasyonlar.html">Rezervasyonlar</a>
+                <a href="özelteklifler.html">Özel Teklifler</a>
+                <a href="iletisim.html">Contact</a>
+              </nav>
+            </div>
+          </div>
+          <div class="copyright">
+            <!-- copyright -->
+            <p>©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.</p>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
