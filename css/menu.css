@@ -322,10 +322,16 @@ footer div {
 .mail {
   text-align: center;
   width: 30%;
+  padding-left: 2rem;
+}
+
+.mail button {
+  font-size: 2rem;
 }
 nav {
   justify-content: space-around;
 }
+
 .form-control {
   border: none !important;
   padding: 0;
@@ -350,16 +356,50 @@ footer button {
 /* mobile media query */
 @media (max-width: 428px) {
   /* header section */
+
   .header-title {
-    width: 75%;
-    margin: 0 auto;
+    width: 100%;
     text-align: center;
+    font-size: 2rem;
+  }
+  h1 {
     font-size: 4rem;
   }
-
+  header nav {
+    margin: 0;
+  }
+  .yan {
+    flex-direction: column;
+    width: auto;
+    font-size: 3rem;
+  }
+  nav a {
+    text-align: left;
+  }
   /* menu */
   .menu {
     background-image: none;
+    background-color: white;
+  }
+  .menu-section {
+    width: auto;
+  }
+  #yanyana {
+    flex-direction: column;
+  }
+
+  .yemekler {
+    background-color: white;
+    flex-direction: column;
+    width: auto;
+    width: 71vw;
+  }
+  .yemekler h2,
+  h3,
+  h4,
+  p {
+    text-align: center;
+    color: black;
   }
 
   /* footer section */
@@ -367,5 +407,48 @@ footer button {
     height: auto;
     padding-top: 2.5vh;
     font-size: 2rem;
+  }
+  .mail {
+    width: 95%;
+    text-align: center;
+  }
+  footer h4 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  footer nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  footer nav a {
+    text-align: center;
+  }
+  .form-control {
+    flex-direction: column;
+  }
+  .form-control input {
+    font-size: 3rem;
+  }
+  .form-control button {
+    width: auto;
+  }
+  .bord {
+    border: 5px solid;
+  }
+  .baslik1 {
+    border-bottom: 15px solid;
+  }
+  .alticizili {
+    border-bottom: 5px solid;
+  }
+  .copyright {
+    padding-right: 0;
+  }
+  .copyright p {
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 }
