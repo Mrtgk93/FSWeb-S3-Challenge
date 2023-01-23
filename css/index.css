@@ -348,6 +348,7 @@ footer div {
 .mail {
   text-align: center;
   width: 30%;
+  padding-left: 2rem;
 }
 nav {
   justify-content: space-around;
@@ -370,16 +371,44 @@ footer button {
   font-weight: bold;
 }
 .copyright {
-  text-align: end;
+  text-align: right;
+  padding-right: 10rem;
 }
 
 /* mobile media query */
 @media (max-width: 428px) {
   /* header section */
-
+  .header-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .yan {
+    flex-direction: column;
+    width: auto;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  #ikon {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+  }
+  #ikon i {
+    font-size: 3rem;
+    width: auto;
+  }
   /* gallery section */
   .gallery {
     height: auto;
+  }
+  #a {
+    display: flex;
+    flex-direction: column;
+  }
+  section div img {
+    width: 100%;
+    margin-top: 3rem;
   }
 
   /* about us section */
@@ -425,5 +454,42 @@ footer button {
     height: auto;
     padding-top: 2.5vh;
     font-size: 2rem;
+  }
+  footer nav {
+    margin-top: 2rem;
+    flex-direction: column;
+    width: 100%;
+  }
+  footer nav a {
+    text-align: center;
+  }
+  .mail {
+    width: 95%;
+    text-align: center;
+  }
+  footer nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  .form-control {
+    flex-direction: column;
+  }
+  .form-control input {
+    font-size: 3rem;
+  }
+  .form-control button {
+    width: auto;
+  }
+  .copyright {
+    width: auto;
+    padding: 0;
+    text-align: center;
+  }
+  .copyright p {
+    width: auto;
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 }
